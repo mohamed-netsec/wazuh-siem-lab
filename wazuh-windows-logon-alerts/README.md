@@ -1,6 +1,7 @@
 ### WAZUH - SIEM Security Lab : ###
  
-🏗️ Lab Architecture
+### 🏗️ Lab Architecture :
+
 Wazuh Manager: Centralized SIEM server (192.168.1.100)
 Wazuh Agent: Installed on the Windows endpoint (client2, Agent ID: 001)
 OS: RHEL Linux / Windows 10
