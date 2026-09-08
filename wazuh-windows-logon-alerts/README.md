@@ -2,9 +2,9 @@
  
 ### 🏗️ Lab Architecture :
 
-Wazuh Manager: Centralized SIEM server (192.168.1.100)
-Wazuh Agent: Installed on the Windows endpoint (client2, Agent ID: 001)
-OS: RHEL Linux / Windows 10
+--> Wazuh Manager: Centralized SIEM server (192.168.1.100)
+--> Wazuh Agent: Installed on the Windows endpoint (client2, Agent ID: 001)
+--> OS: RHEL Linux / Windows 10
 
 ### 1 . Windows Security Event Log via eventchannel :
 
@@ -16,7 +16,8 @@ OS: RHEL Linux / Windows 10
 
 
 ✅ Key Implementation Steps
-1) Enable Windows Security Audit Policy
+
+# 1) Enable Windows Security Audit Policy
 Used secpol.msc on client2.
 Path:
 Local Policies → Audit Policy → Audit logon events
@@ -27,6 +28,35 @@ gpupdate /force
 ```
 
 Verified that Event ID 4625 appears in Event Viewer → Windows Logs → Security after a failed logon attempt.
+
+# Activate ports on RHEL 
+
+
+# Allow Agent communication (TCP & UDP)
+```
+sudo firewall-cmd --permanent --add-port=1514/tcp
+sudo firewall-cmd --permanent --add-port=1514/udp
+```
+# Allow Agent enrollment / registration
+```
+sudo firewall-cmd --permanent --add-port=1515/tcp
+```
+# Allow Web Dashboard access (HTTPS)
+```
+sudo firewall-cmd --permanent --add-port=443/tcp
+```
+# Allow Wazuh Manager API access
+```
+sudo firewall-cmd --permanent --add-port=55000/tcp
+```
+# Reload Firewalld to activate the new rules
+```
+sudo firewall-cmd --reload
+```
+# Check all currently open ports in the active zone
+```
+sudo firewall-cmd --list-ports
+```
 
 ### 2) Configure Wazuh Agent to Collect Security Events :
 
