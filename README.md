@@ -1,4 +1,4 @@
-### WAZUH - SIEM Security Lab :
+### WAZUH - SIEM Security Lab : ###
  
 🏗️ Lab Architecture
 Wazuh Manager: Centralized SIEM server (192.168.1.100)
