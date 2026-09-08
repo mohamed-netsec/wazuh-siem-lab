@@ -7,6 +7,13 @@ OS: RHEL Linux / Windows 10
 
 ### 1 . Windows Security Event Log via eventchannel :
 
+
+![photo](./check-status1.png)
+
+![photo](./check-status.png)
+
+
+
 ✅ Key Implementation Steps
 1) Enable Windows Security Audit Policy
 Used secpol.msc on client2.
@@ -32,7 +39,8 @@ Ensured the following block exists:
 </localfile>
 
 
--------------photo
+![photo](./remove-query-block.png)
+
 
 
 
@@ -60,6 +68,8 @@ Applied filters:
 win.system.eventID:4625
 agent.id:001 or agent name client2
 
+
+![photo](./test-eventID.png)
 
 
 ### 📌 Important Notes
