@@ -8,9 +8,9 @@ OS: RHEL Linux / Windows 10
 ### 1 . Windows Security Event Log via eventchannel :
 
 
-![photo](./check-status1.png)
-
 ![photo](./check-status.png)
+
+![photo](./check-status1.png)
 
 
 
@@ -69,10 +69,10 @@ win.system.eventID:4625
 agent.id:001 or agent name client2
 
 
-![photo](./test-eventID.png)
+![photo](./test-eventID-4625.png)
 
 
 ### 📌 Important Notes
-Ensure ports 1514 and 1515 are open between the Agent and Manager.
-Always check ossec.log on the Agent if events are not appearing.
-Use precise filters in the Dashboard to isolate events from client2.
+-Ensure ports 1514 and 1515 are open between the Agent and Manager.
+-Always check ossec.log on the Agent if events are not appearing.
+-Use precise filters in the Dashboard to isolate events from client2.
