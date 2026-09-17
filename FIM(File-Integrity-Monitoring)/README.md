@@ -46,5 +46,5 @@ after applying the XML configurations , restart the agent service to apply chang
 ​# 🔍 Forensic Document Details
 ​The Wazuh Manager captured detailed metadata identifying the root cause and modification diff:
 
-![photo](./FIM(File_Integrity_Monitoring)/fim-test.png)
+![photo](./fim-test.png)
 ![photo](./FIM(File_Integrity_Monitoring)/test.png)
