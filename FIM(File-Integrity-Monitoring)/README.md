@@ -29,7 +29,7 @@ To enable real-time detection, process tracking, and line diff reporting, the sy
 after applying the XML configurations , restart the agent service to apply changes.
 
 
--------------------
+![photo](./FIM(File_Integrity_Monitoring)/ossec-conf.png)
 
 
 ### ⚔️ Attack Simulation & Threat Detection
@@ -46,4 +46,5 @@ after applying the XML configurations , restart the agent service to apply chang
 ​# 🔍 Forensic Document Details
 ​The Wazuh Manager captured detailed metadata identifying the root cause and modification diff:
 
-----------
+![photo](./FIM(File_Integrity_Monitoring)/fim-test.png)
+![photo](./FIM(File_Integrity_Monitoring)/test.png)
