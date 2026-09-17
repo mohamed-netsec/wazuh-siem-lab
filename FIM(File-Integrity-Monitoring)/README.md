@@ -29,7 +29,7 @@ To enable real-time detection, process tracking, and line diff reporting, the sy
 after applying the XML configurations , restart the agent service to apply changes.
 
 
-![photo](./FIM(File_Integrity_Monitoring)/ossec-conf.png)
+![photo](./FIM(File-Integrity-Monitoring)/ossec-conf.png)
 
 
 ### ⚔️ Attack Simulation & Threat Detection
