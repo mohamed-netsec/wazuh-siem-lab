@@ -39,6 +39,7 @@ after applying the XML configurations , restart the agent service to apply chang
 ​An unauthorized modification was introduced to the Windows hosts file using notepad.exe under user account client.
 ​A fake DNS entry redirecting domain traffic was appended:
 192.168.1.111 malicious-domain.com
+192.168.1.150 malicious-domain.com
 ​    2. Real-time Alerting:
 ​Wazuh captured the file event instantly upon file save (Ctrl + S), triggering Rule ID 550 (Integrity checksum changed).
 ### ​📊 Detection & Forensic Evidence
